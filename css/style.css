@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    max-width: 1000px;
+    margin: auto;
+    background-color: black;
+}
+
+header {
+    background-color: #48C5CE;
+    text-align: center;
+    padding: 10px;
+}
+
+.title {
+    color: white;
+    text-transform: uppercase;
+    font-size: min(30px, 3vw);
+}
+
+main {
+    background-image: url('../imagens/people.jpg');
+    background-size: cover;
+    overflow: hidden;
+    padding: 20px;
+}
+
+.form-container {
+    background-color: #FFFFFFbb;
+    max-width: 250px;
+    padding: 20px;
+    float: right;
+}
+
+.title-form {
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+.sub-form {
+    text-align: justify;
+}
+
+.mb {
+    margin-bottom: 15px;
+}
+
+input, select {
+    width: 100%;
+    border: none;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+input:focus, select:focus {
+    outline: 1px solid #48C5CE;
+}
+
+input:hover, select:hover {
+    outline: 1px solid #48C5CE;
+}
+
+select:hover {
+    cursor: pointer;
+}
+
+input[type="submit"] {
+    text-transform: uppercase;
+    font-weight: bolder;
+    background-color: #48C5CE;
+    color: white;
+}
+
+input[type="submit"]:hover {
+    outline: none;
+    cursor: pointer;
+}
+
+select {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+
+    background-image: url(../imagens/arrow.jpg);
+    background-repeat: no-repeat;
+    background-position: calc(100% - 10px) center;
+}
+
+footer {
+    background-color: #202121;
+    text-align: center;
+    padding: 40px;
+}
+
+.picture {
+    width: 160px;
+}
+
+.description {
+    text-align: justify;
+    display: inline-block;
+    color: white;
+    max-width: 40%;
+    margin-left: 40px;
+}
+
+.description h3, .description p {
+    margin-bottom: 20px;
+}
+
+.description h3 {
+    font-size: 24px;
+}
+
+@media screen and (max-width: 800px) {
+    .picture {
+        width: 260px;
+    }
+
+    .description p {
+        font-size: 18px;
+    }
+
+    .description h3 {
+        font-size: 26px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .picture {
+        width: 200px;
+    }
+
+    .description {
+        max-width: 80%;
+        margin-top: 20px;
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .form-container {
+        max-width: 300px;
+        float: none;
+        margin: auto;
+    }
+}
